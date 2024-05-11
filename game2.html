@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div>I whisper.</div><span class="small">"We're finally starting the game now."</span>
+<div>In front of you is a tall cupboard that seems to simultaneously be leaning to the left and towards you, as if it's going to topple any second.</div>
+<div class="big">"DON'T WORRY THOUGH,"</div> <div>I say, smiling.</div> <div class="lopsided">"This is very stable."</div>
+<div>I wave you towards the cupboard. "Go ahead and open it."</div>
+
+<a id="opening" href="game3.html" class="options" >Open it<a>
+
+<script>
+    const hoverElement = document.getElementById('opening');
+
+    hoverElement.addEventListener('mouseover',function() {
+        hoverElement.innerText = 'The two doors of the cupboard push into each other before finally groaning open with a splintery crack as they show two shelves of colorful items.';
+    });
+
+    hoverElement.addEventListener('mouseout', function() {
+        hoverElement.innerText = 'Open it';
+    });
+</script>

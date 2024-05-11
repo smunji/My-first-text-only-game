@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Game</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    
+
+<p>
+    <span class="orange small grab">Sunflower</span>
+    <span class="fakeYellow2 grab">Lemon</span>
+    <span class="purple red small grab">Banana</span>
+    <span id="button1" class="yellow big grab">Marigold</span>
+    <span class="fakeYellow3 big hoverBlack hoverSmall grab">Taxi</span>
+    <span class="purple grab">Mustard</span>
+    <span class="green big hoverBlack grab">Guitar</span>
+    <span class="blue grab">Ocean</span>
+    <span class="big lopsided fakeYellow1 grab">Tweety</span>
+    <span id="button3" class="yellow big grab">Pikachu</span>
+    <span class="big green grab">Mountain</span>
+    <span class="grab">Laptop</span>
+    <span class="green hoverBlack grab">Pillow</span>
+    <span class="blue big lopsided grab">Turtles</span>
+    <span class="grab">Book</span>
+    <span class="blue grab">Telescope</span>
+    <span id="button2" class="yellow big grab">Honey</span>
+    <span class="big yellow small grab">Seashells</span>
+    <span class="big teal hoverPurple grab">Symphony</span>
+    <span class="yellow small grab">Compass</span>
+</p>
+<script src="script.js"></script>
+<a id="submitOption" class="options" href="game4.html">I've found the items.</a>
+
+<script>
+    const hoverElement = document.getElementById('submitOption');
+
+    hoverElement.addEventListener('mouseover', function() {
+        hoverElement.innerText = 'You move to close the doors but I stop you. "Did you make sure to grab three big yellow items first?"'
+    });
+
+    hoverElement.addEventListener('mouseout', function() {
+        hoverElement.innerText = "I've found the items."
+    });
+</script>
+
+</body>
