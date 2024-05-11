@@ -1,0 +1,176 @@
+.small {
+    font-size: 13px;
+}
+
+.big {
+    font-size: 3vw;
+    font-weight: bolder; /* Would this be the style overwrite? */ 
+}
+
+.big:hover {
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+.lopsided {
+    font-style: oblique 10deg;
+}
+
+.options {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(253, 145, 21);
+    color: white;
+    text-align: center;
+    line-height: 1.5; /* Vertical centering */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Add some margin for spacing */
+    text-decoration: none; /* Remove underline from links */
+    word-wrap: break-word;
+    font-size: 1.2rem;
+    height: 30px;
+}
+  
+  /* Hover effect */
+.options:hover {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    line-height: 1.5; /* Vertical centering */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Add some margin for spacing */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+  
+ /* Reset default list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.yellow {
+    color: rgb(253, 145, 21);
+}
+
+
+
+.hoverYellow:hover {
+    color:  rgb(253, 145, 21);
+}
+
+.hoverSmall:hover {
+    font-size: 2vw;
+}
+
+.hoverBlack:hover {
+    color: black;
+}
+
+.purple {
+    color: plum;
+}
+
+.green {
+    color: greenyellow;
+}
+
+.blue {
+    color: darkcyan;
+}
+
+.hoverPurple:hover {
+    color: plum;
+}
+
+.fakeYellow1 {
+    color: yellow;
+}
+
+.fakeYellow2 {
+    color: rgb(239, 211, 0);
+}
+
+.fakeYellow3 {
+    color: darkorange;
+}
+
+.hoverBlack:hover {
+    color: black;
+}
+
+.hoverPurple:hover {
+    color: plum;
+}
+
+.hoverSmall:hover{
+    font-size: 13px;
+} 
+
+.grab {
+ cursor: grab;   
+}
+
+.medium {
+    font-size: 25px;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orangered;
+}
+
+.teal {
+    color: teal;
+}
+
+.vertLay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url(purple1.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px 100px;
+}
+
+.horiLay {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgba(118, 36, 139, .2);
+    justify-content: center;
+    margin: 0% 20%;
+    height: 100px;
+    width: 800px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(102, 62, 112, 0.677);
+    /* filter: blur(5px); */
+
+}
+
+html, body {
+    height: 100%;
+}
+
+.horiLay::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    filter: blur(20px);
+    /* background: transparent; */
+    z-index: -1;
+    display: block;
+}
